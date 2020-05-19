@@ -16,6 +16,21 @@ The repository contains:
 - [ ] Routes: It ensures that requests are directed to the appropriate controllers.
 - [x] index.ts: It's the main file that we'll launch our app and it contains the necessary configurations.
 
+
+
+## Installation
+
+1.  ```$ deno install --allow-read --allow-run --unstable https://deno.land/x/drun@v1.0.0/drun.ts```
+
+2.  ```$ drun```
+
+## Endpoints
+
+| Endpoint  | Status | Request |
+|----------|:--------:|:------:|
+| /api/data|![yes](http://airesgoncalves.com.br/screenshot/acf-to-rest-api/readme/yes.png) | GET
+
+
 ## TODO
 
 - [ ] Directory Layout
@@ -25,3 +40,7 @@ The repository contains:
 ## License
 
 This project is released under the [MIT License](LICENSE).
+
+```
+
+```
