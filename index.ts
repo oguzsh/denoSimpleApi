@@ -1,23 +1,13 @@
-import {
-  Application,
-  Router,
-} from "https://deno.land/x/denotrain@v0.4.4/mod.ts";
+import { Application } from "https://deno.land/x/oak/mod.ts";
+import router from "./routes/routes.ts";
 
-import { mockData } from "./mockData.ts";
+const app = new Application();
 
-// default port : 3000, host: 0.0.0.0
-const app = new Application({ port: 8000 });
+app.use(router.routes());
 
-const router = new Router();
+/* Allowed Methods 
+* GET | POST | DELETE | HEAD | OPTIONS | PATCH | PUT
+*/
+app.use(router.allowedMethods());
 
-app.get("/", () => {
-  return "Welcome to mock data api, go /api/data";
-});
-
-app.use("/api", router);
-
-router.get("/data", () => {
-  return { data: mockData };
-});
-
-await app.run();
+await app.listen({ port: 8000 });
