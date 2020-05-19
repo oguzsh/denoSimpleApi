@@ -10,17 +10,17 @@ The repository contains:
 
 ## Directory layout [Coming soon]
 
-- [] Controllers: It includes the methods of incoming requests.
-- [] Data: It contains the mock data we'll use.
-- [] Models: It's the part where the objects to be used in our app are created.
-- [] Routes: It ensures that requests are directed to the appropriate controllers.
+- [ ] Controllers: It includes the methods of incoming requests.
+- [ ] Data: It contains the mock data we'll use.
+- [ ] Models: It's the part where the objects to be used in our app are created.
+- [ ] Routes: It ensures that requests are directed to the appropriate controllers.
 - [x] index.ts: It's the main file that we'll launch our app and it contains the necessary configurations.
 
 ## TODO
 
-- [] Directory Layout
-- [] CRUD Operations
-- [] Routing Operations
+- [ ] Directory Layout
+- [ ] CRUD Operations
+- [ ] Routing Operations
 
 ## License
 
