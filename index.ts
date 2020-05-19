@@ -1,7 +1,15 @@
-import { serve } from "https://deno.land/std@0.50.0/http/server.ts";
+import {
+  Application,
+  Router,
+} from "https://deno.land/x/denotrain@v0.4.4/mod.ts";
 
-const s = serve({ port: 8000 });
+// default port : 3000, host: 0.0.0.0
+const app = new Application({ port: 8000 });
 
-for await (const req of s) {
-  req.respond({ body: "Hello Deno\n" });
-}
+const router = new Router();
+
+app.get("/", (ctx) => {
+  return { user: "oguzsh" };
+});
+
+await app.run();
