@@ -1,6 +1,6 @@
 import MockModel from "../models/mockModel.ts";
 
-let mockData: Array<MockModel> = [
+let MockData: Array<MockModel> = [
   {
     "id": 1,
     "first_name": "Charo",
@@ -82,3 +82,5 @@ let mockData: Array<MockModel> = [
     "gender": "Male",
   },
 ];
+
+export default MockData;
