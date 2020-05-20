@@ -5,7 +5,7 @@
 The repository contains:
 
 - a [Deno](https://deno.land/) (v**1.0**)
-- a [Deno Train](https://github.com/Caesar2011/denotrain) (v**0.4.4**)
+- a [oak](https://github.com/oakserver/oak) (v**4.0.0**)
 - a [Deno Runner](https://github.com/MarcHanin/drun/tree/master) (v**1.0.0**)
 
 ## Directory layout
